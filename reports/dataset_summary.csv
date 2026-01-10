@@ -1,0 +1,10 @@
+Split,Class,Count
+train,bearing,80
+train,propeller,160
+train,healthy,260
+val,bearing,20
+val,propeller,60
+val,healthy,80
+test,bearing,40
+test,propeller,60
+test,healthy,100
