@@ -12,8 +12,10 @@ tensorflow_hub>=0.13.0
 # Streamlit for UI
 streamlit>=1.28.0
 
-# LLM client - for local Mistral or stub. Use 'llama-cpp-python' for local LLM, or mock.
-llama-cpp-python>=0.2.0
+# LLM client - removed llama-cpp-python due to compilation issues on Streamlit Cloud
+# For local LLM support, install 'llama-cpp-python' in your local environment
+# or use 'ollama' package as alternative
+# For Streamlit Cloud, LLM features will use mock/stub implementation
 
 # For fetching files
 requests>=2.28.0
