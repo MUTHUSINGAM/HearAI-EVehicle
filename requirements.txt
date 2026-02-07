@@ -1,0 +1,29 @@
+# Audio processing
+librosa
+soundfile
+pyaudio
+numpy
+scipy
+
+# ML & Deep Learning
+tensorflow
+# yamnet (comes as TF Hub module)
+tensorflow_hub
+
+# Streamlit for UI
+streamlit
+
+# LLM client - for local Mistral or stub. Use 'llama-cpp-python' for local LLM, or mock.
+# Optional: llama-cpp-python (install separately if using quantized models)
+# Optional: Ollama (install separately: https://ollama.ai)
+
+# For fetching files
+requests
+
+# Visualization
+matplotlib
+
+# Misc
+pandas
+scikit-learn
+joblib
