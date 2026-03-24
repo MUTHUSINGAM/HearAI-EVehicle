@@ -21,19 +21,10 @@ if uploaded_file is not None:
 
     if pred_class == 'healthy' and confidence > 0.8:
         st.success("🟢 Vehicle Operating Normally")
-        expl = generate_explanation(pred_class, confidence, probs)
-        st.markdown(f"### {expl}")
+        st.markdown("## No issues detected.")
     else:
         st.warning("⚠️ Fault Detected")
         expl = generate_explanation(pred_class, confidence, probs)
-        st.markdown(f"### {expl}")
-        
-        # Show technical details in expander (optional)
-        with st.expander("📊 Technical Details"):
-            st.write(f"**Classification:** {pred_class}")
-            st.write(f"**Confidence:** {confidence:.2%}")
-            st.write("**All Probabilities:**")
-            for cls, prob in probs.items():
-                st.write(f"  - {cls}: {prob:.2%}")
+        st.markdown(f"#### {expl}")
 else:
     st.info("Upload a 1-min vehicle WAV to begin.")

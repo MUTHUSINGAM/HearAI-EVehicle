@@ -1,29 +1,24 @@
 # Audio processing
-librosa
-soundfile
-pyaudio
-numpy
-scipy
+librosa>=0.10.2,<0.11
+soundfile>=0.12.0
+numpy>=1.21.0
+scipy>=1.7.0
 
-# ML & Deep Learning
-tensorflow
-# yamnet (comes as TF Hub module)
-tensorflow_hub
+# ML & Deep Learning - FIXED for Python 3.10 compatibility
+tensorflow==2.15.0
+tensorflow_hub>=0.13.0
+setuptools<70  # Must be <70 to include pkg_resources for tensorflow_hub
 
 # Streamlit for UI
-streamlit
-
-# LLM client - for local Mistral or stub. Use 'llama-cpp-python' for local LLM, or mock.
-# Optional: llama-cpp-python (install separately if using quantized models)
-# Optional: Ollama (install separately: https://ollama.ai)
+streamlit>=1.28.0
 
 # For fetching files
-requests
+requests>=2.28.0
 
 # Visualization
-matplotlib
+matplotlib>=3.5.0
 
 # Misc
-pandas
-scikit-learn
-joblib
+pandas>=1.5.0
+scikit-learn>=1.0.0
+joblib>=1.2.0
